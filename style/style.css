@@ -3,3 +3,142 @@
 	margin: 0 auto;
 	padding: 0 20px;
 }
+body {	
+	background-color: black;
+	color: rgb(255, 255, 255);
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+}
+body a {
+	color:white;
+}
+
+/****************************
+font-family: 'Inter', sans-serif;
+font-family: 'Merriweather', serif;
+
+/****************************/
+/******** HEADER ************/
+/****************************/
+
+.header-container {
+	width: 1440px;
+	margin: 0 auto;
+	padding: 25px 0;
+	background: url(/assets/jpg/hero-bg.jpg) no-repeat center 0;	
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+.header-logo {
+
+}
+.header-right {
+	display: flex;	
+}
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+}
+.nav-list li{
+	margin: 0 15px;
+}
+.header-right a{
+	font-size: 20px;	
+}
+.language-toggle {
+	margin-left: 19px;
+}
+.language-toggle a:first-child {
+	color: #BDAE82;
+}
+.language-toggle span {
+	margin: 0 6px 0 4px;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/****************************/
+/********** HERO ************/
+/****************************/
+
+.hero {
+	width: 1440px;	
+	height: auto;
+	margin: 0 auto;
+	background: url(/assets/jpg/hero-bg.jpg) no-repeat center -90px;
+	padding: 189px 0 150px 80px;
+}
+.hero-content {
+	max-width: 480px;
+	max-height: 330px;	
+}
+.hero-content__title {
+	font-family: 'Merriweather', serif;
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 41px;
+}
+.hero-content p {
+	font-size: 20px;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+.hero-content__button {
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: #BDAE82;
+	text-align: center;	
+	font-size: 20px;
+	color: black;
+	line-height: 56px;
+}
+.skills {
+}
+.scills-item {
+}
+.scills-item__img {
+}
+.scills-item__title {
+}
+.scills-item__content {
+}
+.portfolio {
+}
+.portfolio-buttons {
+}
+.portfolio-buttons__item {
+}
+.portfolio-imagies {
+}
+.portfolio-imagies__item {
+}
+.video {
+}
+.video__item {
+}
+.price {
+}
+.price-list {
+}
+.price-list__item {
+}
+.price-list__title {
+}
+.price-price {
+}
+.contacts {
+}
+.footer-item {
+}
+.privacy {
+}
+.scope-link {
+}
+.social {
+}
