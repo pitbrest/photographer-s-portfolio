@@ -1,9 +1,6 @@
-.container {
+.wrapper {
 	width: 1440px;
 	margin: 0 auto;
-	padding: 0 20px;
-}
-body {
 	background-color: black;
 	color: rgb(255, 255, 255);
 	font-family: "Inter", sans-serif;
@@ -84,7 +81,7 @@ nav {
 	height: auto;
 	margin: 0 auto;
 	background: url(/assets/jpg/hero-bg.jpg) no-repeat center -90px;
-	padding: 189px 0 150px 80px;
+	padding: 189px 0 330px 80px;
 }
 .hero-content {
 	max-width: 480px;
