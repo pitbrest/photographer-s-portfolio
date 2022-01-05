@@ -3,19 +3,33 @@
 	margin: 0 auto;
 	padding: 0 20px;
 }
-body {	
+body {
 	background-color: black;
 	color: rgb(255, 255, 255);
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 18px;
 }
 body a {
-	color:white;
+	color: white;
 }
-
-/****************************
-font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif;
+h2 {
+	font-family: "Merriweather", serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #bdae82;
+	text-align: center;
+	margin: 0 20px;
+}
+.section-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 85px;
+}
+main span {
+	border-top: 2px solid #bdae82;
+	width: 275px;
+}
 
 /****************************/
 /******** HEADER ************/
@@ -25,7 +39,7 @@ font-family: 'Merriweather', serif;
 	width: 1440px;
 	margin: 0 auto;
 	padding: 25px 0;
-	background: url(/assets/jpg/hero-bg.jpg) no-repeat center 0;	
+	background: url(/assets/jpg/hero-bg.jpg) no-repeat center 0;
 }
 nav {
 	display: flex;
@@ -34,26 +48,25 @@ nav {
 	padding: 0 20px;
 }
 .header-logo {
-
 }
 .header-right {
-	display: flex;	
+	display: flex;
 }
 .nav-list {
 	display: flex;
 	justify-content: space-between;
 }
-.nav-list li{
+.nav-list li {
 	margin: 0 15px;
 }
-.header-right a{
-	font-size: 20px;	
+.header-right a {
+	font-size: 20px;
 }
 .language-toggle {
 	margin-left: 19px;
 }
 .language-toggle a:first-child {
-	color: #BDAE82;
+	color: #bdae82;
 }
 .language-toggle span {
 	margin: 0 6px 0 4px;
@@ -67,7 +80,7 @@ nav {
 /****************************/
 
 .hero {
-	width: 1440px;	
+	width: 1440px;
 	height: auto;
 	margin: 0 auto;
 	background: url(/assets/jpg/hero-bg.jpg) no-repeat center -90px;
@@ -75,10 +88,10 @@ nav {
 }
 .hero-content {
 	max-width: 480px;
-	max-height: 330px;	
+	max-height: 330px;
 }
 .hero-content__title {
-	font-family: 'Merriweather', serif;
+	font-family: "Merriweather", serif;
 	font-size: 60px;
 	font-weight: bold;
 	margin-bottom: 41px;
@@ -92,23 +105,53 @@ nav {
 	display: block;
 	width: 220px;
 	height: 55px;
-	background-color: #BDAE82;
-	text-align: center;	
+	background-color: #bdae82;
+	text-align: center;
 	font-size: 20px;
 	color: black;
 	line-height: 56px;
 }
+
+/****************************/
+/********* SKILLS ***********/
+/****************************/
+
 .skills {
+	width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	padding: 120px 0 0 0;
+}
+.skills-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .scills-item {
+	flex: 0 1 340px;
+	text-align: center;
+	padding: 0 30px;
 }
 .scills-item__img {
 }
 .scills-item__title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 60px 0 35px 0;
 }
 .scills-item__content {
+	line-height: 36px;
 }
+
+/****************************/
+/******** PORTFOLIO *********/
+/****************************/
+
 .portfolio {
+	width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	padding: 120px 0 0 0;
 }
 .portfolio-buttons {
 }
@@ -142,3 +185,28 @@ nav {
 }
 .social {
 }
+
+/*
+h2::before {
+	content: "";
+	display: inline-block;
+	line-height: 25px;
+	border-top: 3px solid #bdae82;
+	position: absolute;
+	z-index: 10;
+	width: 340px;
+	top: 19px;
+	left: 18%;
+}
+h2::after {
+	content: "";
+	display: inline-block;
+	line-height: 25px;
+	border-top: 3px solid #bdae82;
+	position: absolute;
+	z-index: 10;
+	width: 340px;
+	top: 19px;
+	left: 57%;
+}
+*/
