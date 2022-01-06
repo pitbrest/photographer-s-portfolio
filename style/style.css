@@ -169,7 +169,7 @@ nav {
 	flex-wrap: wrap;
 }
 .portfolio-imagies__item {
-	flex: 0 1 450px;
+	flex: 1 1 450px;
 	margin: 12.5px;
 }
 .video {
