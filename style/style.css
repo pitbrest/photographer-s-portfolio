@@ -46,7 +46,7 @@ main span {
 	width: 1440px;
 	margin: 0 auto;
 	padding: 25px 0;
-	background: url(assets/jpg/hero-bg.jpg) no-repeat center 0;
+	background: url(/assets/jpg/hero-bg.jpg assets/jpg/hero-bg.jpg) no-repeat center 0;
 }
 nav {
 	display: flex;
