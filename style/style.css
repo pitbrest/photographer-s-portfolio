@@ -148,7 +148,7 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 0 0 0;
+	padding: 120px 7.5px 0;
 }
 .portfolio-buttons {
 	display: flex;
@@ -172,10 +172,36 @@ nav {
 	flex: 1 1 450px;
 	margin: 12.5px;
 }
+
+/****************************/
+/******** PORTFOLIO *********/
+/****************************/
+
 .video {
+	width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	padding: 107.5px 20px 0;
 }
-.video__item {
+.video-img {
+	position: relative;
 }
+.video-img img {
+	display: block;
+	margin: 0 auto;
+}
+.video-img_hover {
+	position: absolute;
+	visibility: hidden;
+	z-index: 10;
+	top: 287.5px;
+	left: 635px;
+	filter: hue-rotate(20deg);
+}
+.video-img_main:hover + .video-img_hover {
+	visibility: visible;
+}
+
 .price {
 }
 .price-list {
