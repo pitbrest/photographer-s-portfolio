@@ -174,7 +174,7 @@ nav {
 }
 
 /****************************/
-/******** PORTFOLIO *********/
+/********** VIDEO ***********/
 /****************************/
 
 .video {
@@ -202,17 +202,55 @@ nav {
 	visibility: visible;
 }
 
+/****************************/
+/********** PRICE ***********/
+/****************************/
+
 .price {
+	width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	padding: 107.5px 5px 100px;
 }
 .price-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .price-list__item {
+	flex: 0 1 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #bdae82;
+	padding: 60px 0 40px 0;
+	margin: 0 12.5px;
 }
 .price-list__title {
+	font-family: "Merriweather", serif;
+	font-size: 28px;
+	font-weight: bold;	
 }
 .price-price {
+	font-family: "Merriweather", serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #bdae82;	
+	margin: 45px 0 40px;
 }
+.price-list__item p {
+	line-height: 36px;
+}
+.price-list__button {
+	margin-top: 30px;
+}
+
+/****************************/
+/********* CONTACTS *********/
+/****************************/
+
 .contacts {
+	
 }
 .footer-item {
 }
