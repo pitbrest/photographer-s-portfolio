@@ -117,7 +117,10 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 0 0 0;
+	padding: 120px 11px 0;
+}
+.skills-header {
+	padding-bottom: 80px;
 }
 .skills-list {
 	display: flex;
@@ -134,7 +137,7 @@ nav {
 .scills-item__title {
 	font-size: 20px;
 	font-weight: 700;
-	margin: 60px 0 35px 0;
+	margin: 60px 0 30px 0;
 }
 .scills-item__content {
 	line-height: 36px;
@@ -148,14 +151,19 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 7.5px 0;
+	padding: 129px 7.5px 0;
+}
+.portfolio-header {
+	padding-bottom: 80px;
 }
 .portfolio-buttons {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 47.5px;
 }
-.portfolio-buttons {
+.portfolio span {
+	border-top: 2px solid #bdae82;
+	width: 240px;
 }
 .portfolio-buttons__item:not(:last-child) {
 	margin-right: 5px;
@@ -182,6 +190,9 @@ nav {
 	height: auto;
 	margin: 0 auto;
 	padding: 107.5px 20px 0;
+}
+.video-header {
+	padding-bottom: 80px;
 }
 .video-img {
 	position: relative;
@@ -210,7 +221,14 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 107.5px 5px 100px;
+	padding: 120px 5px 100px;
+}
+.price-header {
+	padding-bottom: 80px;
+}
+.price span {
+	border-top: 2px solid #bdae82;
+	width: 280px;
 }
 .price-list {
 	display: flex;
@@ -223,7 +241,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	border: 2px solid #bdae82;
-	padding: 60px 0 40px 0;
+	padding: 55px 0 40px 0;
 	margin: 0 12.5px;
 }
 .price-list__title {
@@ -236,13 +254,13 @@ nav {
 	font-size: 24px;
 	font-weight: bold;
 	color: #bdae82;	
-	margin: 45px 0 40px;
+	margin: 41px 0 27px;
 }
 .price-list__item p {
 	line-height: 36px;
 }
 .price-list__button {
-	margin-top: 30px;
+	margin-top: 39px;
 }
 
 /****************************/
@@ -252,7 +270,7 @@ nav {
 .contacts {
 	width: 1440px;	
 	margin: 0 auto;
-	padding: 85px 0 195px 0;
+	padding: 81px 0 195px 0;
 	background: url(../assets/jpg/contacts-bg.jpg) no-repeat center;
 }
 .contacts-content {	
@@ -263,7 +281,7 @@ nav {
 	padding: 0 20px 0 970px;		
 }
 .contacts-content__title {
-	margin: 0 0 65px 0;
+	margin: 0 0 61px 0;
 }
 input[type = 'email'], input[type = 'tel'], textarea {
 	display: block;
@@ -273,7 +291,7 @@ input[type = 'email'], input[type = 'tel'], textarea {
 	color: #bdae82;
 	font-size: 20px;
 	margin-bottom: 20px;
-	padding-left: 20px;
+	padding-left: 18px;
 }
 input[type = 'email'], input[type = 'tel'] {
 	width: 450px;
@@ -282,7 +300,10 @@ input[type = 'email'], input[type = 'tel'] {
 textarea {
 	width: 450px;
 	height: 100px;
-	padding-top: 5px;	
+	padding-top: 10px;	
+}
+.contacts-content__button {
+	margin: 30px 0 0 0;
 }
 
 /****************************/
@@ -293,7 +314,7 @@ textarea {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 60px 20px;
+	padding: 50px 20px;
 	background-color: black;
 	color: white;
 	font-family: "Inter", sans-serif;
@@ -304,26 +325,33 @@ textarea {
 }
 .footer-item {
 	flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+}
+.privacy span:nth-child(2) {
+	margin: 0 25px 0 20px;
+}
+.gh-link img {
+	fill: #bdae82;
 }
 .privacy {
 }
 .gh-link {
 }
 .scope-link {
+	padding: 0 0 0 27px;
 }
 .rs-link {
 }
 .social ul {
 	display: flex;
-	justify-content: flex-end;
+	justify-content:center;
 	align-items: center;
 }
-.social li {
-	margin: 0 15px;
+.social ul li:not(:last-child) {
+	margin-right: 20px;
 }
-.social li:last-child {
-	margin: 0 0 0 15px;
-}
+
 /*
 h2::before {
 	content: "";
