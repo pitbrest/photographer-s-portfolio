@@ -92,6 +92,7 @@ nav {
 }
 .header-logo:hover {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+	transition: 0.5s;
 }
 
 /****************************/
