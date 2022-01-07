@@ -12,6 +12,10 @@ html {
 body a {
 	color: white;
 }
+body a:hover {
+	color: #bdae82;
+	transition: 0.5s;
+}
 h2 {
 	font-family: "Merriweather", serif;
 	font-size: 40px;
@@ -39,6 +43,10 @@ main span {
 	font-size: 20px;
 	color: black;
 	line-height: 52px;
+}
+.button:hover {
+	color: white;
+	transition: 0.5s;
 }
 
 /****************************/
@@ -81,6 +89,9 @@ nav {
 	vertical-align: middle;
 	font-size: 20px;
 	font-weight: bold;
+}
+.header-logo:hover {
+	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 /****************************/
@@ -170,6 +181,10 @@ nav {
 	background-color: black;
 	border: 2px solid #bdae82;
 	color: #bdae82;
+}
+.portfolio-buttons__item:hover {
+	color: white;
+	transition: 0.5s;
 }
 .portfolio-imagies {
 	display: flex;
@@ -302,7 +317,8 @@ input[type = 'email'], input[type = 'tel'] {
 textarea {
 	width: 450px;
 	height: 100px;
-	padding-top: 10px;	
+	padding-top: 10px;
+	resize: none;	
 }
 .contacts-content__button {
 	margin: 30px 0 0 0;
@@ -333,9 +349,6 @@ textarea {
 .privacy span:nth-child(2) {
 	margin: 0 25px 0 20px;
 }
-.gh-link img {
-	fill: #bdae82;
-}
 .scope-link {
 	padding: 0 0 0 27px;
 }
@@ -347,4 +360,11 @@ textarea {
 .social ul li:not(:last-child) {
 	margin-right: 20px;
 }
-
+.footer-item img:hover {
+	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+	transition: 0.5s;
+}
+footer .gh-link__img:hover {
+	filter: invert(26%) sepia(15%) saturate(208%) hue-rotate(7deg) brightness(92%) contrast(400%);
+	transition: 0.5s;
+}
