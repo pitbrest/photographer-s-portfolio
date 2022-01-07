@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 .wrapper {
 	width: 1440px;
 	margin: 0 auto;
@@ -35,7 +38,7 @@ main span {
 	text-align: center;
 	font-size: 20px;
 	color: black;
-	line-height: 56px;
+	line-height: 52px;
 }
 
 /****************************/
@@ -45,16 +48,14 @@ main span {
 .header-container {
 	width: 1440px;
 	margin: 0 auto;
-	padding: 25px 0;
-	background: url(../assets/jpg/hero-bg.jpg) no-repeat center 0;
+	padding: 21px 0;
+	background: url(../assets/jpg/hero-bg.jpg) no-repeat center 2px;
 }
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
-}
-.header-logo {
 }
 .header-right {
 	display: flex;
@@ -91,7 +92,7 @@ nav {
 	height: auto;
 	margin: 0 auto;
 	background: url(../assets/jpg/hero-bg.jpg) no-repeat center -90px;
-	padding: 189px 0 330px 80px;
+	padding: 187px 0 330px 80px;
 }
 .hero-content {
 	max-width: 480px;
@@ -132,8 +133,6 @@ nav {
 	text-align: center;
 	padding: 0 30px;
 }
-.scills-item__img {
-}
 .scills-item__title {
 	font-size: 20px;
 	font-weight: 700;
@@ -151,7 +150,7 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 129px 7.5px 0;
+	padding: 130px 7.5px 0;
 }
 .portfolio-header {
 	padding-bottom: 80px;
@@ -159,6 +158,7 @@ nav {
 .portfolio-buttons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-bottom: 47.5px;
 }
 .portfolio span {
@@ -191,6 +191,10 @@ nav {
 	margin: 0 auto;
 	padding: 107.5px 20px 0;
 }
+.video span {
+	border-top: 2px solid #bdae82;
+	width: 273px;
+}
 .video-header {
 	padding-bottom: 80px;
 }
@@ -202,15 +206,11 @@ nav {
 	margin: 0 auto;
 }
 .video-img_hover {
-	position: absolute;
-	visibility: hidden;
+	position: absolute;	
 	z-index: 10;
 	top: 287.5px;
-	left: 635px;
+	left: 636px;
 	filter: hue-rotate(20deg);
-}
-.video-img_main:hover + .video-img_hover {
-	visibility: visible;
 }
 
 /****************************/
@@ -221,7 +221,7 @@ nav {
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 5px 100px;
+	padding: 102px 5px 100px;
 }
 .price-header {
 	padding-bottom: 80px;
@@ -254,7 +254,7 @@ nav {
 	font-size: 24px;
 	font-weight: bold;
 	color: #bdae82;	
-	margin: 41px 0 27px;
+	margin: 40px 0 27px;
 }
 .price-list__item p {
 	line-height: 36px;
@@ -287,11 +287,13 @@ input[type = 'email'], input[type = 'tel'], textarea {
 	display: block;
 	background: none;
 	border: 2px solid #bdae82;	
+	margin-bottom: 20px;
+	padding-left: 18px;
+}
+input::placeholder, textarea::placeholder {
 	font-family: "Inter", sans-serif;
 	color: #bdae82;
 	font-size: 20px;
-	margin-bottom: 20px;
-	padding-left: 18px;
 }
 input[type = 'email'], input[type = 'tel'] {
 	width: 450px;
@@ -334,14 +336,8 @@ textarea {
 .gh-link img {
 	fill: #bdae82;
 }
-.privacy {
-}
-.gh-link {
-}
 .scope-link {
 	padding: 0 0 0 27px;
-}
-.rs-link {
 }
 .social ul {
 	display: flex;
@@ -352,27 +348,3 @@ textarea {
 	margin-right: 20px;
 }
 
-/*
-h2::before {
-	content: "";
-	display: inline-block;
-	line-height: 25px;
-	border-top: 3px solid #bdae82;
-	position: absolute;
-	z-index: 10;
-	width: 340px;
-	top: 19px;
-	left: 18%;
-}
-h2::after {
-	content: "";
-	display: inline-block;
-	line-height: 25px;
-	border-top: 3px solid #bdae82;
-	position: absolute;
-	z-index: 10;
-	width: 340px;
-	top: 19px;
-	left: 57%;
-}
-*/
