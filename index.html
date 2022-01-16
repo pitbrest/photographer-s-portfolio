@@ -16,7 +16,7 @@
 		rel="stylesheet">
 </head>
 
-<body>
+<body">
 	<div class="wrapper">
 		<header>
 			<div class="header-container">
@@ -24,16 +24,19 @@
 					<a href="#home"><img src="assets/svg/logo.svg" alt="logo" class="header-logo"></a>
 					<div class="header-right">
 						<ul class="nav-list">
-							<li><a href="#Skills">Skills</a></li>
-							<li><a href="#Portfolio">Portfolio</a></li>
-							<li><a href="#Video">Video</a></li>
-							<li><a href="#Price">Price</a></li>
-							<li><a href="#Contacts">Contacts</a></li>
+							<li><a class="nav-link" href="#Skills">Skills</a></li>
+							<li><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+							<li><a class="nav-link" href="#Video">Video</a></li>
+							<li><a class="nav-link" href="#Price">Price</a></li>
+							<li><a class="nav-link" href="#Contacts">Contacts</a></li>
 						</ul>
 						<div class="language-toggle">
 							<a href="#">en</a>
 							<span>/</span>
 							<a href="#">ru</a>
+						</div>
+						<div class="header__burger">
+							<span></span>
 						</div>
 					</div>
 				</nav>
@@ -111,11 +114,9 @@
 					<span></span>
 				</div>
 				<div class="video-img">
-					<img src="assets/jpg/video-player.jpg" class="video-img_main" alt="video-player-img" width="1400"
-						height="705">
-					<button><img src="assets/png/Play_hover.png" class="video-img_hover" alt="video-player-img" width="130"
-							height="130"></button>
+					<button></button>
 				</div>
+
 			</section>
 			<section class="price" id="Price">
 				<div class="price-header section-header">
@@ -189,7 +190,8 @@
 			</ul>
 		</div>
 	</footer>
+
 	<script src="index.js"></script>
-</body>
+	</body>
 
 </html>
