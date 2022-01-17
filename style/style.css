@@ -208,7 +208,8 @@ nav {
 }
 @media (max-width: 650px) {
 	.header-container {
-		background-position: -15px -55px;
+		padding: 10px 0;
+		background: black;
 	}
 	nav {
 		padding: 0 5%;
@@ -257,9 +258,9 @@ nav {
 	.header-right {
 		justify-content: flex-end;
 	}
-	.language-toggle a:first-child {
-		color: #ffba5c;
-	}
+	.language-toggle span {
+		margin: 0 5px 0 5px;		
+	}	
 }
 
 /****************************/
@@ -312,7 +313,9 @@ nav {
 }
 @media (max-width: 650px) {
 	.hero {
-		padding: 7% 10% 15% 5%;
+		background: url(../assets/jpg/hero-bg.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 7% 10% 130% 5%;
 	}
 	.hero-content__title {
 		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));	
@@ -325,14 +328,13 @@ nav {
 }	
 @media (max-width: 480px) {
 	.hero {
-		padding: 7% 10% 18% 5%;
+		background: url(../assets/jpg/hero-bg.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 20% 10% 125% 5%;
 	}
 	.hero-content__title {		
-		margin-bottom: 15vw;	
-	}
-	.hero-content p {
-		display: none;
-	}
+		margin-bottom: 8vw;	
+	}	
 }
 
 /****************************/
