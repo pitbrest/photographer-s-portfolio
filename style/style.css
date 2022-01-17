@@ -58,7 +58,7 @@ main span {
 		font-size: 32px;
 	}
 	main span {
-		width: 117px;
+		width: 10%;
 	}
 }
 @media (max-width: 767px) {
@@ -324,6 +324,9 @@ nav {
 	}
 }	
 @media (max-width: 480px) {
+	.hero {
+		padding: 7% 10% 18% 5%;
+	}
 	.hero-content__title {		
 		margin-bottom: 15vw;	
 	}
@@ -386,6 +389,11 @@ nav {
 		line-height: 22px;
 	}
 }
+@media (max-width: 580px) {
+	.skills {		
+		padding: 40px 11px 0;
+	}
+}
 
 /****************************/
 /******** PORTFOLIO *********/
@@ -409,6 +417,8 @@ nav {
 }
 .portfolio-buttons__item {
 	margin: 5px 2.7px;
+	flex: 0 1 220px;
+	min-width: 160px;
 }
 .portfolio span {
 	border-top: 2px solid #bdae82;
@@ -418,6 +428,9 @@ nav {
 	background-color: black;
 	border: 2px solid #bdae82;
 	color: #bdae82;
+}
+.portfolio-buttons__item:last-child {	
+	border: 2px solid #bdae82;	
 }
 .portfolio-buttons__item:hover {
 	color: white;
@@ -451,6 +464,37 @@ nav {
 	.portfolio-buttons__item {
 		margin: 2.5px;
 		flex: 0 1 220px;
+	}
+}
+@media (max-width: 761px) {
+	.portfolio {
+		padding: 63px 10px 7.5px;
+	}
+	.portfolio-buttons__item {
+		margin: 5px;
+	}
+	.portfolio-imagies {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;		
+	}
+	.portfolio-imagies__item {
+		flex: 1 1 auto;
+		margin: 5px 0;
+		object-fit: contain;
+		max-width: 100%;
+	}
+	.portfolio-imagies__item {		
+		object-fit: cover;		
+	}
+	.portfolio span {
+		width: 10%;
+	}
+}
+@media (max-width: 580px) {
+	.portfolio {		
+		padding: 40px 7.5px 0;
 	}
 }
 
@@ -495,7 +539,7 @@ nav {
 		padding: 83.5px 0 0 0;
 	}
 	.video span {
-		width: 116px;
+		width: 10%;
 	}
 	.video-header {
 		padding-bottom: 74px;
@@ -516,6 +560,19 @@ nav {
 	.video-img img {
 		width: 64px;
 		height: 64px;
+	}
+}
+@media (max-width: 500px) {
+	.video-img {		
+		background: url(../assets/jpg/video-player_768.jpg) no-repeat 13% center;		
+	}
+	.video-img img {
+		width: 40px;
+		height: 40px;
+	}
+	.video-img button {
+		left: 40%;
+		top: 37%;
 	}
 }
 
@@ -570,6 +627,7 @@ nav {
 .price-list__button {
 	margin-top: 39px;
 }
+
 @media (max-width: 768px) {
 	.price {
 		padding: 104px 20px 0;
@@ -578,12 +636,19 @@ nav {
 		padding: 0 0 74px 0;
 	}
 	.price span {
-		width: 122px;
+		width: 10%;
 	}
 	.price-list__item {
 		flex: 0 1 422px;
 		border: 3px solid #bdae82;
 		margin: 0 0 49px 0;
+	}
+}
+@media (max-width: 500px) {	
+	.price-list__button {
+		width: 55%;
+		height: 40px;	
+		min-width: 170px;	
 	}
 }
 
@@ -682,11 +747,11 @@ textarea {
 	input[type="email"],
 	input[type="tel"],
 	textarea {
-		border: 2px solid #f9ac1e;
+		border: 2px solid #d4b886;
 		background-color: #bdae8254;
 	}
 	.contacts-content__title {
-		color: #ffc456;
+		color: #d8b064;
 		margin: 0 0 40px 0;
 	}
 	.contacts-content__button {
@@ -695,25 +760,17 @@ textarea {
 		border: 2px solid #ffd486;
 		color: #fff4df;
 		background-color: #bdae8254;
-		width: auto;
-		height: auto;
+		width: 150px;
+		height: 50px;
 		padding: 10px;
 	}
 }
 @media (max-width: 480px) {
-	.contacts-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
-		align-items: center;
-		padding: 20px;
-	}
-	.contacts-content__button {
-		display: block;
-		margin: 30px auto 0 auto;
-		font-size: 17px;
-	}
+	.contacts {		
+		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;		
+	}	
 }
+
 /****************************/
 /********** FOOTER **********/
 /****************************/
@@ -784,5 +841,20 @@ footer .gh-link__img:hover {
 	}
 	.privacy {
 		align-items: center;
+	}
+}
+@media (max-width: 480px) {
+	.footer {
+		height: 130px;
+		padding: 16px 0 16px 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-item img {
+		width: 25px;
+		height: 25px;
+	}
+	.scope-link {
+		margin: 0;
 	}
 }
