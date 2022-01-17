@@ -213,6 +213,19 @@ nav {
 	nav {
 		padding: 0 5%;
 	}
+	.nav-list {		
+		right: -620px;
+		width: 300px;
+		height: 100%;
+		background-color: rgb(0 0 0 / 92%);
+		padding: 72px 0 0 61px;		
+	}
+	.nav-list a {
+		font-size: calc(22px + 8 * ((100vw - 320px) / (1280 - 320)));
+	}
+	.nav-list li {
+		margin: 0 0 30px 0;
+	}
 	.header-logo {
 		width: 30px;
 		height: 30px;
@@ -221,7 +234,7 @@ nav {
 		text-align: right;
 		width: 70%;
 		height: 2px;
-		left: 0;
+		left: 15px;
 		top: 13px;
 		transition: all 0.3s ease 0s;
 	}
@@ -232,11 +245,20 @@ nav {
 		position: absolute;
 		width: 70%;
 		height: 2px;
-		left: 0;
+		left: 15px;
 		transition: all 0.3s ease 0s;
+	}
+	.header__burger::before {
+		top: 3px;
+	}
+	.header__burger::after {
+		bottom: 3px;
 	}
 	.header-right {
 		justify-content: flex-end;
+	}
+	.language-toggle a:first-child {
+		color: #ffba5c;
 	}
 }
 
@@ -284,21 +306,32 @@ nav {
 	}
 	.hero-content p {
 		line-height: 23px;
-		margin-bottom: 60px;
+		margin-bottom: 25px;
+		max-width: 300px;
 	}
 }
 @media (max-width: 650px) {
 	.hero {
-		padding: 7% 10% 15% 10%;
+		padding: 7% 10% 15% 5%;
 	}
 	.hero-content__title {
-		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));
-		margin-bottom: 7%;
+		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));	
+		margin-bottom: 30px;	
+	}
+	.hero-content p {
+		font-size: calc(14px + 8 * ((100vw - 320px) / (1280 - 320)));	
+		max-width: 235px;
+	}
+}	
+@media (max-width: 480px) {
+	.hero-content__title {		
+		margin-bottom: 15vw;	
 	}
 	.hero-content p {
 		display: none;
 	}
 }
+
 /****************************/
 /********* SKILLS ***********/
 /****************************/
