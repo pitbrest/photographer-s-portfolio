@@ -61,7 +61,14 @@ main span {
 		width: 117px;
 	}
 }
-
+@media (max-width: 767px) {
+	.button {
+		width: 30%;
+		height: auto;
+		line-height: 30px;
+		font-size: 16px;
+	}
+}
 /****************************/
 /******** HEADER ************/
 /****************************/
@@ -112,12 +119,11 @@ nav {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 	transition: 0.5s;
 }
-
 @media (max-width: 768px) {
 	.header-container {
 		padding: 20px 0 18px 0;
 		background: url(../assets/jpg/hero-bg.jpg) no-repeat;
-		background-position: -17px -35px;
+		background-position: -15px -35px;
 		background-size: 130%;
 		position: relative;
 	}
@@ -200,6 +206,36 @@ nav {
 		font-weight: bold;
 	}
 }
+@media (max-width: 650px) {
+	nav {
+		padding: 0 5%;
+	}
+	.header-logo {
+		width: 30px;
+		height: 30px;
+	}
+	.header__burger span {
+		text-align: right;
+		width: 70%;
+		height: 2px;
+		left: 0;
+		top: 13px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger::before,
+	.header__burger::after {
+		content: "";
+		background-color: #fff;
+		position: absolute;
+		width: 70%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header-right {
+		justify-content: flex-end;
+	}
+}
 
 /****************************/
 /********** HERO ************/
@@ -246,6 +282,18 @@ nav {
 	.hero-content p {
 		line-height: 23px;
 		margin-bottom: 60px;
+	}
+}
+@media (max-width: 650px) {
+	.hero {
+		padding: 7% 10% 15% 10%;
+	}
+	.hero-content__title {
+		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));
+		margin-bottom: 7%;
+	}
+	.hero-content p {
+		display: none;
 	}
 }
 /****************************/
@@ -573,7 +621,63 @@ textarea {
 		margin: 30px auto 0 auto;
 	}
 }
-
+@media (max-width: 767px) {
+	.contacts-content {
+		align-items: flex-end;
+		padding-right: 5%;
+	}
+	input[type="email"],
+	input[type="tel"] {
+		width: 100%;
+		height: 50px;
+	}
+	textarea {
+		width: 100%;
+		height: 100px;
+		padding-top: 10px;
+		resize: none;
+	}
+	input::placeholder,
+	textarea::placeholder {
+		font-family: "Inter", sans-serif;
+		color: #fff4df;
+		font-size: 20px;
+	}
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		border: 2px solid #f9ac1e;
+		background-color: #bdae8254;
+	}
+	.contacts-content__title {
+		color: #ffc456;
+		margin: 0 0 40px 0;
+	}
+	.contacts-content__button {
+		display: block;
+		margin: 30px 0 0 auto;
+		border: 2px solid #ffd486;
+		color: #fff4df;
+		background-color: #bdae8254;
+		width: auto;
+		height: auto;
+		padding: 10px;
+	}
+}
+@media (max-width: 480px) {
+	.contacts-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		padding: 20px;
+	}
+	.contacts-content__button {
+		display: block;
+		margin: 30px auto 0 auto;
+		font-size: 17px;
+	}
+}
 /****************************/
 /********** FOOTER **********/
 /****************************/
