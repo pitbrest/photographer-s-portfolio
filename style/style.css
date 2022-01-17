@@ -207,6 +207,9 @@ nav {
 	}
 }
 @media (max-width: 650px) {
+	.header-container {
+		background-position: -15px -55px;
+	}
 	nav {
 		padding: 0 5%;
 	}
