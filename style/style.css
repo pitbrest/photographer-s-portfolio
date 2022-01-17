@@ -208,7 +208,7 @@ nav {
 }
 @media (max-width: 650px) {
 	.header-container {
-		padding: 10px 0;
+		padding: 15px 0;
 		background: black;
 	}
 	nav {
@@ -330,7 +330,7 @@ nav {
 	.hero {
 		background: url(../assets/jpg/hero-bg.jpg) no-repeat center center;
 		background-size: cover;
-		padding: 20% 10% 125% 5%;
+		padding: 20% 10% 87% 5%;
 	}
 	.hero-content__title {		
 		margin-bottom: 8vw;	
