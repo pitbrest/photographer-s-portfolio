@@ -56,7 +56,7 @@ main span {
 	}
 	h2 {
 		font-size: 32px;
-	}	
+	}
 }
 @media (max-width: 767px) {
 	.button {
@@ -64,7 +64,7 @@ main span {
 		height: auto;
 		line-height: 30px;
 		font-size: 16px;
-	}	
+	}
 }
 
 /****************************/
@@ -213,12 +213,12 @@ nav {
 	nav {
 		padding: 0 5%;
 	}
-	.nav-list {		
+	.nav-list {
 		right: -620px;
 		width: 300px;
 		height: 100%;
 		background-color: rgb(0 0 0 / 92%);
-		padding: 72px 0 0 61px;		
+		padding: 72px 0 0 61px;
 	}
 	.nav-list a {
 		font-size: calc(22px + 8 * ((100vw - 320px) / (1280 - 320)));
@@ -258,8 +258,8 @@ nav {
 		justify-content: flex-end;
 	}
 	.language-toggle span {
-		margin: 0 5px 0 5px;		
-	}	
+		margin: 0 5px 0 5px;
+	}
 }
 
 /****************************/
@@ -302,9 +302,9 @@ nav {
 	.hero-content__title {
 		font-size: 32px;
 		font-weight: bold;
-		margin-bottom: 37px;		
-	}	
-	.hero-content p {		
+		margin-bottom: 37px;
+	}
+	.hero-content p {
 		max-width: 388px;
 		margin-bottom: 61px;
 		line-height: 23px;
@@ -317,25 +317,25 @@ nav {
 		padding: 7% 10% 130% 5%;
 	}
 	.hero-content__title {
-		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));	
-		margin-bottom: 30px;	
+		font-size: calc(29px + 8 * ((100vw - 320px) / (1280 - 320)));
+		margin-bottom: 30px;
 	}
 	.hero-content p {
-		font-size: calc(14px + 8 * ((100vw - 320px) / (1280 - 320)));	
+		font-size: calc(14px + 8 * ((100vw - 320px) / (1280 - 320)));
 		max-width: 235px;
 		line-height: 23px;
-		margin-bottom: 25px;		
+		margin-bottom: 25px;
 	}
-}	
+}
 @media (max-width: 480px) {
 	.hero {
 		background: url(../assets/jpg/hero-bg.jpg) no-repeat center center;
 		background-size: cover;
 		padding: 20% 10% 87% 5%;
 	}
-	.hero-content__title {		
-		margin-bottom: 8vw;	
-	}	
+	.hero-content__title {
+		margin-bottom: 8vw;
+	}
 }
 
 /****************************/
@@ -396,9 +396,9 @@ nav {
 	}
 }
 @media (max-width: 580px) {
-	.skills {		
+	.skills {
 		padding: 40px 11px 0;
-	}	
+	}
 	.skills span {
 		max-width: 10%;
 	}
@@ -438,8 +438,8 @@ nav {
 	border: 2px solid #bdae82;
 	color: #bdae82;
 }
-.portfolio-buttons__item:last-child {	
-	border: 2px solid #bdae82;	
+.portfolio-buttons__item:last-child {
+	border: 2px solid #bdae82;
 }
 .portfolio-buttons__item:hover {
 	color: white;
@@ -486,7 +486,7 @@ nav {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;		
+		align-items: center;
 	}
 	.portfolio-imagies__item {
 		flex: 1 1 auto;
@@ -494,15 +494,15 @@ nav {
 		object-fit: contain;
 		max-width: 100%;
 	}
-	.portfolio-imagies__item {		
-		object-fit: cover;		
+	.portfolio-imagies__item {
+		object-fit: cover;
 	}
 	.portfolio span {
 		width: 10%;
 	}
 }
 @media (max-width: 580px) {
-	.portfolio {		
+	.portfolio {
 		padding: 40px 7.5px 0;
 	}
 }
@@ -573,13 +573,13 @@ nav {
 }
 @media (max-width: 500px) {
 	.video {
-		padding: 40px 0 0 0;
+		padding: 40px 0 70px 0;
 	}
 	.video span {
 		width: 10%;
 	}
-	.video-img {		
-		background: url(../assets/jpg/video-player_768.jpg) no-repeat 13% center;		
+	.video-img {
+		background: url(../assets/jpg/video-player_768.jpg) no-repeat 13% center;
 	}
 	.video-img img {
 		width: 40px;
@@ -659,14 +659,17 @@ nav {
 		margin: 0 0 49px 0;
 	}
 }
-@media (max-width: 500px) {	
+@media (max-width: 500px) {
 	.price {
 		padding: 40px 20px 0;
 	}
+	.price-header {
+		padding: 0 0 60px 0;
+	}
 	.price-list__button {
 		width: 55%;
-		height: 40px;	
-		min-width: 170px;	
+		height: 40px;
+		min-width: 170px;
 	}
 	.price span {
 		width: 10%;
@@ -787,10 +790,10 @@ textarea {
 	}
 }
 @media (max-width: 480px) {
-	.contacts {		
-		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;	
-		padding-top: 55px;	
-	}	
+	.contacts {
+		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;
+		padding-top: 55px;
+	}
 }
 
 /****************************/
