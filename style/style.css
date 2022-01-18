@@ -56,10 +56,7 @@ main span {
 	}
 	h2 {
 		font-size: 32px;
-	}
-	main span {
-		width: 10%;
-	}
+	}	
 }
 @media (max-width: 767px) {
 	.button {
@@ -67,8 +64,9 @@ main span {
 		height: auto;
 		line-height: 30px;
 		font-size: 16px;
-	}
+	}	
 }
+
 /****************************/
 /******** HEADER ************/
 /****************************/
@@ -303,14 +301,13 @@ nav {
 	}
 	.hero-content__title {
 		font-size: 32px;
-		font-weight: normal;
-		margin-bottom: 37px;
-	}
-	.hero-content p {
+		font-weight: bold;
+		margin-bottom: 37px;		
+	}	
+	.hero-content p {		
+		max-width: 388px;
+		margin-bottom: 61px;
 		line-height: 23px;
-		margin-bottom: 25px;
-		max-width: 300px;
-	}
 }
 @media (max-width: 650px) {
 	.hero {
@@ -325,6 +322,8 @@ nav {
 	.hero-content p {
 		font-size: calc(14px + 8 * ((100vw - 320px) / (1280 - 320)));	
 		max-width: 235px;
+		line-height: 23px;
+		margin-bottom: 25px;		
 	}
 }	
 @media (max-width: 480px) {
@@ -378,6 +377,9 @@ nav {
 	.skills-header {
 		padding-bottom: 55px;
 	}
+	.skills span {
+		max-width: 120px;
+	}
 	.skills-list {
 		padding-bottom: 60px;
 		justify-content: center;
@@ -395,7 +397,7 @@ nav {
 @media (max-width: 580px) {
 	.skills {		
 		padding: 40px 11px 0;
-	}
+	}	
 }
 
 /****************************/
@@ -542,7 +544,7 @@ nav {
 		padding: 83.5px 0 0 0;
 	}
 	.video span {
-		width: 10%;
+		width: 117%;
 	}
 	.video-header {
 		padding-bottom: 74px;
@@ -566,6 +568,9 @@ nav {
 	}
 }
 @media (max-width: 500px) {
+	.video span {
+		width: 10%;
+	}
 	.video-img {		
 		background: url(../assets/jpg/video-player_768.jpg) no-repeat 13% center;		
 	}
@@ -639,7 +644,7 @@ nav {
 		padding: 0 0 74px 0;
 	}
 	.price span {
-		width: 10%;
+		width: 121px;
 	}
 	.price-list__item {
 		flex: 0 1 422px;
@@ -652,6 +657,9 @@ nav {
 		width: 55%;
 		height: 40px;	
 		min-width: 170px;	
+	}
+	.price span {
+		width: 10%;
 	}
 }
 
@@ -718,7 +726,7 @@ textarea {
 		padding: 0;
 	}
 	.contacts-content__title {
-		margin: 0 0 57px 0;
+		margin: 0 0 56px 0;
 	}
 	.contacts-content__button {
 		display: block;
