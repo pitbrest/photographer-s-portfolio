@@ -308,6 +308,7 @@ nav {
 		max-width: 388px;
 		margin-bottom: 61px;
 		line-height: 23px;
+	}
 }
 @media (max-width: 650px) {
 	.hero {
@@ -398,6 +399,9 @@ nav {
 	.skills {		
 		padding: 40px 11px 0;
 	}	
+	.skills span {
+		max-width: 10%;
+	}
 }
 
 /****************************/
@@ -568,6 +572,9 @@ nav {
 	}
 }
 @media (max-width: 500px) {
+	.video {
+		padding: 40px 0 0 0;
+	}
 	.video span {
 		width: 10%;
 	}
@@ -653,6 +660,9 @@ nav {
 	}
 }
 @media (max-width: 500px) {	
+	.price {
+		padding: 40px 20px 0;
+	}
 	.price-list__button {
 		width: 55%;
 		height: 40px;	
@@ -759,7 +769,7 @@ textarea {
 	input[type="tel"],
 	textarea {
 		border: 2px solid #d4b886;
-		background-color: #bdae8254;
+		background-color: #bdae8257;
 	}
 	.contacts-content__title {
 		color: #d8b064;
@@ -778,7 +788,8 @@ textarea {
 }
 @media (max-width: 480px) {
 	.contacts {		
-		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;		
+		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;	
+		padding-top: 55px;	
 	}	
 }
 
