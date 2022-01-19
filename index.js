@@ -1,4 +1,4 @@
-// Выпадающее иеню и интерактивная кнопка бургер
+// Выпадающее меню и интерактивная кнопка бургер
 
 const menu = document.querySelector('.nav-list')
 const burger = document.querySelector('.header__burger')
