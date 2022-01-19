@@ -206,10 +206,9 @@ nav {
 	}
 }
 @media (max-width: 767px) {
-	.nav-list {		
-		width: 100%;		
+	.nav-list {
+		width: 100%;
 	}
-
 }
 @media (max-width: 619px) {
 	.header-container {
@@ -219,7 +218,7 @@ nav {
 	nav {
 		padding: 0 5%;
 	}
-	
+
 	.nav-list a {
 		font-size: calc(22px + 8 * ((100vw - 320px) / (1280 - 320)));
 	}
@@ -385,7 +384,7 @@ nav {
 		padding-bottom: 60px;
 		justify-content: center;
 	}
-	.scills-item {		
+	.scills-item {
 		margin-bottom: 60px;
 		margin-left: 2px;
 		margin-right: 1px;
@@ -530,7 +529,7 @@ nav {
 	width: 100%;
 	height: 705px;
 	background: url(../assets/jpg/video-player.jpg) no-repeat center center;
-	background-size: contain;	
+	background-size: contain;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -542,7 +541,7 @@ nav {
 .video-img button {
 	background-color: transparent;
 	width: 130px;
-	height: 130px;	
+	height: 130px;
 }
 @media (max-width: 768px) {
 	.video {
@@ -559,8 +558,8 @@ nav {
 		max-width: 100%;
 		height: 418px;
 		background: url(../assets/jpg/video-player_768.jpg) no-repeat center center;
-		background-size: cover;		
-	}	
+		background-size: cover;
+	}
 	.video-img img {
 		width: 64.6px;
 		height: 64.7px;
@@ -578,8 +577,8 @@ nav {
 	}
 	.video-img img {
 		width: 40px;
-		height: 40px;	}
-	
+		height: 40px;
+	}
 }
 
 /****************************/
@@ -771,7 +770,7 @@ textarea {
 	}
 	input[type="email"]:focus,
 	input[type="tel"]:focus,
-	textarea:focus {		
+	textarea:focus {
 		background-color: #f8f8f800;
 	}
 	.contacts-content__title {
@@ -781,9 +780,9 @@ textarea {
 	.contacts-content__button {
 		display: block;
 		margin: 30px 0 0 auto;
-		border: 2px solid #BDAE82;
+		border: 2px solid #bdae82;
 		font-size: 16px;
-			
+
 		width: 150px;
 		height: 50px;
 		padding: 10px;
