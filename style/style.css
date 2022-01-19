@@ -782,9 +782,8 @@ textarea {
 		margin: 30px 0 0 auto;
 		border: 2px solid #bdae82;
 		font-size: 16px;
-
 		width: 150px;
-		height: 50px;
+		height: 55px;
 		padding: 10px;
 	}
 }
@@ -792,6 +791,23 @@ textarea {
 	.contacts {
 		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;
 		padding-top: 55px;
+	}
+	input[type="email"],
+	input[type="tel"] {
+		width: 70%;
+		height: 50px;
+		margin: 30px 0 0 auto;
+	}
+	textarea {
+		width: 70%;
+		height: 100px;
+		padding-top: 10px;
+		resize: none;
+		margin: 30px 0 0 auto;
+	}
+	input::placeholder,
+	textarea::placeholder {
+		color: #fde8a8;
 	}
 }
 
