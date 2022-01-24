@@ -80,4 +80,32 @@ const i18Obj = {
 		'send-message': 'Отправить'
 	}
 }
-export default i18Obj;
+
+const languageToggleButtons = document.querySelectorAll('.language-toggle__button')
+const textElements = document.querySelectorAll('[data-i18Obj]')
+
+
+
+languageToggleButtons.forEach(item => {
+
+	item.addEventListener('click', (event) => {
+		event.preventDefault()
+
+		languageToggleButtons.forEach(button => button.classList.remove('active'))
+		item.classList.add('active')
+
+		if (item.classList.contains('active') && item.classList.contains('ru')) { getTranslate('ru') }
+		if (item.classList.contains('active') && item.classList.contains('en')) { getTranslate('en') }
+	})
+})
+
+function getTranslate(lang) {
+
+	textElements.forEach(element => {
+		element.textContent = i18Obj[lang][element.dataset.i18obj]
+	});
+
+}
+
+
+// export default i18Obj;

@@ -60,8 +60,9 @@ main span {
 }
 @media (max-width: 767px) {
 	.button {
-		width: 30%;
-		height: auto;
+		width: 55%;
+		height: 40px;
+		min-width: 170px;
 		line-height: 30px;
 		font-size: 16px;
 	}
@@ -104,7 +105,7 @@ nav {
 .language-toggle {
 	margin-left: 19px;
 }
-.language-toggle a:first-child {
+.language-toggle__button.active {
 	color: #bdae82;
 }
 .language-toggle span {
@@ -194,7 +195,7 @@ nav {
 	.header__burger.active span {
 		transform: scale(0);
 	}
-	.language-toggle {
+	.language-toggle__button {
 		margin-left: 19px;
 		align-self: center;
 	}
