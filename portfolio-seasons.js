@@ -1,9 +1,11 @@
-// Active vision of portfolio buttons
+// Active vision for portfolio buttons and
+// change images for current active season portfolio button
 
-const portfolioButtons = document.querySelectorAll('.portfolio-buttons__item')
-const portfolioImages = document.querySelectorAll('.portfolio-imagies')
 
 portfolioButtons.forEach((button) => {
+
+	const portfolioButtons = document.querySelectorAll('.portfolio-buttons__item')
+	const portfolioImages = document.querySelectorAll('.portfolio-imagies')
 
 	button.addEventListener('click', (event) => {
 		event.preventDefault()
@@ -34,7 +36,8 @@ portfolioButtons.forEach((button) => {
 })
 
 
-// Change images for current active season portfolio button
+
+
 
 
 
