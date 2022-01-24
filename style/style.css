@@ -451,6 +451,11 @@ nav {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.portfolio-imagies.winter,
+.portfolio-imagies.summer,
+.portfolio-imagies.spring {
+	display: none;
+}
 .portfolio-imagies__item {
 	flex: 1 1 450px;
 	margin: 12.5px;
