@@ -434,13 +434,15 @@ nav {
 	border-top: 2px solid #bdae82;
 	width: 240px;
 }
-.portfolio-buttons__item:not(:last-child) {
+.portfolio-buttons__item {
 	background-color: black;
 	border: 2px solid #bdae82;
 	color: #bdae82;
 }
-.portfolio-buttons__item:last-child {
+.portfolio-buttons__item.current {
 	border: 2px solid #bdae82;
+	background-color: #bdae82;
+	color: black;
 }
 .portfolio-buttons__item:hover {
 	color: white;
@@ -451,11 +453,19 @@ nav {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.portfolio-imagies.winter,
-.portfolio-imagies.summer,
-.portfolio-imagies.spring {
+.portfolio-imagies,
+.portfolio-imagies,
+.portfolio-imagies,
+.portfolio-imagies {
 	display: none;
 }
+.portfolio-imagies.active,
+.portfolio-imagies.active,
+.portfolio-imagies.active,
+.portfolio-imagies.active {
+	display: flex;
+}
+
 .portfolio-imagies__item {
 	flex: 1 1 450px;
 	margin: 12.5px;
@@ -488,7 +498,7 @@ nav {
 	.portfolio-buttons__item {
 		margin: 5px;
 	}
-	.portfolio-imagies {
+	.portfolio-imagies.active {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
