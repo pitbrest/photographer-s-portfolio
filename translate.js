@@ -84,8 +84,6 @@ const i18Obj = {
 const languageToggleButtons = document.querySelectorAll('.language-toggle__button')
 const textElements = document.querySelectorAll('[data-i18Obj]')
 
-
-
 languageToggleButtons.forEach(item => {
 
 	item.addEventListener('click', (event) => {

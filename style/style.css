@@ -23,18 +23,20 @@ h2 {
 	font-size: 40px;
 	font-weight: bold;
 	color: #bdae82;
-	text-align: center;
-	margin: 0 20px;
+	
 }
-.section-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 85px;
+.section-header {		
+	width: 49.5%;
+	height: 65px;
+	margin: 0 auto;
+	background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
 }
-main span {
-	border-top: 2px solid #bdae82;
-	width: 275px;
+.section-title {
+	background-color: black;	
+	width: max-content;
+	margin: 0 auto;
+	padding: 0 20px;
+	line-height: 51px;
 }
 .button {
 	width: 220px;
@@ -346,7 +348,7 @@ nav {
 	max-width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 11px 0;
+	padding: 114px 11px 0;
 }
 .skills-header {
 	padding-bottom: 65px;
@@ -355,6 +357,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding-top: 46px;
 }
 .scills-item {
 	flex: 0 1 340px;
@@ -365,7 +368,7 @@ nav {
 .scills-item__title {
 	font-size: 20px;
 	font-weight: 700;
-	margin: 60px 0 30px 0;
+	margin: 60px 0 31px 0;
 }
 .scills-item__content {
 	line-height: 36px;
@@ -377,10 +380,7 @@ nav {
 	}
 	.skills-header {
 		padding-bottom: 55px;
-	}
-	.skills span {
-		max-width: 120px;
-	}
+	}	
 	.skills-list {
 		padding-bottom: 60px;
 		justify-content: center;
@@ -400,10 +400,7 @@ nav {
 @media (max-width: 580px) {
 	.skills {
 		padding: 40px 11px 0;
-	}
-	.skills span {
-		max-width: 10%;
-	}
+	}	
 }
 
 /****************************/
@@ -414,26 +411,19 @@ nav {
 	max-width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 116px 7.5px 0;
-}
-.portfolio-header {
-	padding-bottom: 74px;
+	padding: 110px 7.5px 0;
 }
 .portfolio-buttons {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-bottom: 42.5px;
+	margin: 54px 0 42.5px;
 }
 .portfolio-buttons__item {
 	margin: 5px 2.7px;
 	flex: 0 1 220px;
 	min-width: 160px;
-}
-.portfolio span {
-	border-top: 2px solid #bdae82;
-	width: 240px;
 }
 .portfolio-buttons__item {
 	background-color: black;
@@ -479,10 +469,7 @@ nav {
 	}
 	.portfolio-header {
 		padding-bottom: 71px;
-	}
-	.portfolio span {
-		width: 89px;
-	}
+	}	
 	.portfolio-buttons {
 		flex-wrap: wrap;
 		margin-bottom: 45.5px;
@@ -513,10 +500,7 @@ nav {
 	}
 	.portfolio-imagies__item {
 		object-fit: cover;
-	}
-	.portfolio span {
-		width: 10%;
-	}
+	}	
 }
 @media (max-width: 580px) {
 	.portfolio {
@@ -532,14 +516,7 @@ nav {
 	max-width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 107.5px 20px 0;
-}
-.video span {
-	border-top: 2px solid #bdae82;
-	width: 273px;
-}
-.video-header {
-	padding-bottom: 80px;
+	padding: 102px 20px 0;
 }
 .video-img {
 	width: 100%;
@@ -549,6 +526,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 60px;
 }
 .video-img img:hover {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
@@ -562,10 +540,7 @@ nav {
 @media (max-width: 768px) {
 	.video {
 		padding: 83.5px 0 0 0;
-	}
-	.video span {
-		width: 15%;
-	}
+	}	
 	.video-header {
 		padding-bottom: 74px;
 	}
@@ -584,10 +559,7 @@ nav {
 @media (max-width: 500px) {
 	.video {
 		padding: 40px 0 70px 0;
-	}
-	.video span {
-		width: 10%;
-	}
+	}	
 	.video-img {
 		background: url(../assets/jpg/video-player_768.jpg) no-repeat 13% center;
 	}
@@ -605,21 +577,17 @@ nav {
 	max-width: 1440px;
 	height: auto;
 	margin: 0 auto;
-	padding: 120px 0 91px;
+	padding: 116px 0 91px;
 }
 .price-header {
-	margin: 0 auto;
-	padding: 0 0 70px 0;
+	margin: 0 auto;	
 	text-align: center;
-}
-.price span {
-	border-top: 2px solid #bdae82;
-	width: 280px;
 }
 .price-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 49px;
 }
 .price-list__item {
 	flex: 0 1 450px;
@@ -655,10 +623,7 @@ nav {
 	}
 	.price-header {
 		padding: 0 0 73px 0;
-	}
-	.price span {
-		width: 121px;
-	}
+	}	
 	.price-list__item {
 		flex: 0 1 422px;
 		border: 3px solid #bdae82;
@@ -676,10 +641,7 @@ nav {
 		width: 55%;
 		height: 40px;
 		min-width: 170px;
-	}
-	.price span {
-		width: 10%;
-	}
+	}	
 }
 
 /****************************/
