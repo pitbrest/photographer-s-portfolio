@@ -16,7 +16,7 @@
 		rel="stylesheet">
 </head>
 
-<body>
+<body data-theme='toggle'>
 	<div class="wrapper">
 		<header>
 			<div class="header-container">
@@ -35,6 +35,12 @@
 							<span>/</span>
 							<a href="#" class='language-toggle__button ru'>ru</a>
 						</div>
+						<div class="theme-toggle">
+							<a href="#" class='theme-toggle__button dark active'><img src="assets/svg/dark-theme.svg"
+									alt="dark-theme-toggle" width="45px" height="45px"></a>
+							<a href="#" class='theme-toggle__button white'><img src="assets/svg/white-theme.svg"
+									alt="white-theme-toggle" width="45px" height="45px"></a>
+						</div>
 						<div class="header__burger">
 							<span></span>
 						</div>
@@ -52,9 +58,9 @@
 					<button class="hero-content__button button" data-i18Obj="hire">Hire me</button>
 				</div>
 			</section>
-			<section class="skills" id="Skills">
-				<div class="skills-header section-header">
-					<h2 class="skills-title section-title" data-i18Obj="skills">Skills</h2>
+			<section class="skills" id="Skills" data-theme='toggle'>
+				<div class="skills-header section-header" data-theme='toggle'>
+					<h2 class="skills-title section-title" data-i18Obj="skills" data-theme='toggle'>Skills</h2>
 				</div>
 				<div class="skills-list">
 					<div class="scills-item">
@@ -84,15 +90,18 @@
 				</div>
 			</section>
 			<section class="portfolio" id="Portfolio">
-				<div class="portfolio-header section-header">
-					<h2 class="section-title" data-i18Obj="portfolio">Portfolio</h2>
+				<div class="portfolio-header section-header" data-theme='toggle'>
+					<h2 class="section-title" data-i18Obj="portfolio" data-theme='toggle'>Portfolio</h2>
 				</div>
 				<div class="portfolio-buttons">
-					<button class="portfolio-buttons__item button winter" id="portfolio" data-i18Obj="winter">Winter</button>
-					<button class="portfolio-buttons__item button spring" id="portfolio" data-i18Obj="spring">Spring</button>
-					<button class="portfolio-buttons__item button summer" id="portfolio" data-i18Obj="summer">Summer</button>
-					<button class="portfolio-buttons__item button autumn current" id="portfolio"
-						data-i18Obj="autumn">Autumn</button>
+					<button class="portfolio-buttons__item button winter" id="portfolio" data-i18Obj="winter"
+						data-theme='toggle'>Winter</button>
+					<button class="portfolio-buttons__item button spring" id="portfolio" data-i18Obj="spring"
+						data-theme='toggle'>Spring</button>
+					<button class="portfolio-buttons__item button summer" id="portfolio" data-i18Obj="summer"
+						data-theme='toggle'>Summer</button>
+					<button class="portfolio-buttons__item button autumn current" id="portfolio" data-i18Obj="autumn"
+						data-theme='toggle'>Autumn</button>
 				</div>
 				<div class="portfolio-imagies active" id="autumn">
 					<img src="assets/jpg/autumn/1.jpg" alt="portfolio-img" class="portfolio-imagies__item" width="450"
@@ -152,17 +161,16 @@
 				</div>
 			</section>
 			<section class="video" id="Video">
-				<div class="video-header section-header">
-					<h2 class="section-title" data-i18Obj="video">Video</h2>
+				<div class="video-header section-header" data-theme='toggle'>
+					<h2 class="section-title" data-i18Obj="video" data-theme='toggle'>Video</h2>
 				</div>
 				<div class="video-img">
 					<button><img src="assets/png/Play_hover.png" alt="play-img"></button>
 				</div>
-
 			</section>
-			<section class="price" id="Price">
-				<div class="price-header section-header">
-					<h2 class="section-title" data-i18Obj="price">Price</h2>
+			<section class="price" id="Price" data-theme='toggle'>
+				<div class="price-header section-header" data-theme='toggle'>
+					<h2 class="section-title" data-i18Obj="price" data-theme='toggle'>Price</h2>
 				</div>
 				<div class="price-list">
 					<div class="price-list__item">
@@ -235,6 +243,8 @@
 	<script src="burger-menu.js"></script>
 	<script src="portfolio-seasons.js"></script>
 	<script src="translate.js"></script>
+	<script src="theme-toggle.js"></script>
+
 </body>
 
 </html>

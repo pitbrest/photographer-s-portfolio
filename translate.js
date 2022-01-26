@@ -89,7 +89,8 @@ languageToggleButtons.forEach(item => {
 	item.addEventListener('click', (event) => {
 		event.preventDefault()
 
-		languageToggleButtons.forEach(button => button.classList.remove('active'))
+		languageToggleButtons.forEach(button =>
+			button.classList.remove('active'))
 		item.classList.add('active')
 
 		if (item.classList.contains('active') && item.classList.contains('ru')) { getTranslate('ru') }
