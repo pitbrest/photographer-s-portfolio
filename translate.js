@@ -93,8 +93,14 @@ languageToggleButtons.forEach(item => {
 			button.classList.remove('active'))
 		item.classList.add('active')
 
-		if (item.classList.contains('active') && item.classList.contains('ru')) { getTranslate('ru') }
-		if (item.classList.contains('active') && item.classList.contains('en')) { getTranslate('en') }
+		if (item.classList.contains('active') && item.classList.contains('ru')) {
+			getTranslate('ru')
+			localStorage.setItem('lang', 'ru')
+		}
+		if (item.classList.contains('active') && item.classList.contains('en')) {
+			getTranslate('en')
+			localStorage.setItem('lang', 'en')
+		}
 	})
 })
 
@@ -103,8 +109,14 @@ function getTranslate(lang) {
 	textElements.forEach(element => {
 		element.textContent = i18Obj[lang][element.dataset.i18obj]
 	});
-
 }
 
+getTranslate(localStorage.getItem('lang'))
 
-// export default i18Obj;
+
+/* По клику добавляем соответствующей кнопке класс active 
+и в зависимости от кнопки на которую кликнули выводим русский либо английский вариант перевода.
+
+Так же при клике по кнопке записываем и меняем значение lang в localStorage.
+*/
+
