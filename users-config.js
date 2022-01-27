@@ -3,7 +3,7 @@
 if (localStorage.lang) {
 	let lng = localStorage.getItem('lang')
 	document.querySelector(`.${lng}`).classList.add('active')
-} else { document.querySelector('.language-toggle__button.en)').classList.add('active') }
+} else { document.querySelector('.language-toggle__button.en').classList.add('active') }
 
 
 // Отображение при загрузке страницы сохраненной в localStorage темы
