@@ -101,7 +101,7 @@ h2.white-theme {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 20px 0;
-	background: url(../assets/jpg/hero-bg.jpg) no-repeat 0 0;
+	background: url(../assets/jpg/hero-bg.jpg) no-repeat 0 0;	
 }
 nav {
 	display: flex;
