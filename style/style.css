@@ -59,7 +59,7 @@ h2.white-theme {
 	font-size: 20px;
 	color: black;
 	line-height: 52px;
-}zz
+}
 .button:hover {	
 	color: white;
 	transition: 0.5s;
@@ -828,6 +828,11 @@ textarea {
 	.contacts {
 		background: url(../assets/jpg/contacts-bg-768.jpg) no-repeat -58px center;
 		padding-top: 55px;
+	}
+	.contacts-content__title {
+		color: #d8b064;
+		margin: 0 0 40px 0;
+		padding: 0 0 0 30%;
 	}
 	input[type="email"],
 	input[type="tel"] {
